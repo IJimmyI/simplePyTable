@@ -21,15 +21,15 @@ def create_table(columns, column_width, rows, row_height):
 
     # CREATING THE PRINT
     print(f'print("{top_line}")')
-    for linie in row_lines:
-        print(f'print("{linie}")')
+    for line in row_lines:
+        print(f'print("{line}")')
     print(f'print("{bottom_line}")')
 
 # ENTERING THE VALUES
-columns = int(input("Spaltenanzahl: "))
-column_width = int(input("Spaltenbreite: "))
-rows = int(input("Zeilenanzahl: "))
-row_height = int(input("Zeilenhöhe: "))
+columns = int(input("Number of columns: "))
+column_width = int(input("Column width: "))
+rows = int(input("Number of rows: "))
+row_height = int(input("Row height: "))
 
 # EXECUTE FUNCTION
 create_table(columns, column_width, rows, row_height)
